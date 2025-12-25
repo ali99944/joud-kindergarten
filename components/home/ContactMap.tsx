@@ -3,7 +3,7 @@ import { Phone, MapPin, ArrowLeft, HeartHandshake } from 'lucide-react';
 
 export default function ContactMap() {
   return (
-    <section className="py-24 bg-[#FDF9FF]">
+    <section className="pt-24 pb-12 bg-[#FDF9FF]">
       <div className="max-w-5xl mx-auto px-4 md:px-12">
 
         <div className="relative bg-white rounded-[2.5rem] p-6 shadow-soft border border-gray-200 overflow-hidden">

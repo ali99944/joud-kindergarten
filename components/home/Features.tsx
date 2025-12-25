@@ -77,7 +77,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-24 bg-[#FDF9FF] relative">
+    <section className="py-24 bg-[#FDF9FF] relative" id="features">
       <div className="max-w-7xl mx-auto px-4 md:px-12">
         
         {/* Section Header */}

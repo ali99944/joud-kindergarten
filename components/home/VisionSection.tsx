@@ -4,7 +4,7 @@ import { ArrowLeft, Heart, Sparkles } from 'lucide-react';
 
 export default function VisionSection() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden" id="vision-mission">
       <div className="max-w-7xl mx-auto px-4 md:px-12 flex flex-col gap-32">
         
         {/* --- Part 1: Care (Orange Theme) - Matches Left Side of Hero --- */}

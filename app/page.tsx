@@ -17,8 +17,10 @@ export default function Home() {
       <Features />
       <VisionSection />
       <Facilities />
-      <ContactMap />
-      <ContactForm />
+      <div id="contact">
+        <ContactMap />
+        <ContactForm />
+      </div>
       <Footer />
     </main>
   );

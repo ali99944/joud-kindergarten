@@ -3,14 +3,28 @@ import { MessageCircle } from 'lucide-react';
 
 export default function FloatingWhatsApp() {
   return (
-    <a 
-      href="https://wa.me/966500000000" // Replace with your number
+    <a
+      href="https://wa.me/966500000000"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-8 left-8 z-50 bg-accent text-white p-3 rounded-full shadow-lg hover:bg-[#20bd5a] transition-all duration-300 animate-bounce-slow flex items-center justify-center"
-      aria-label="Contact on WhatsApp"
+      aria-label="WhatsApp"
+      className="
+        fixed bottom-6 right-6 z-50
+        w-14 h-14
+        rounded-full
+        bg-[#EAFBF1]
+        border border-accent/30
+        flex items-center justify-center
+        shadow-soft
+        transition-colors duration-300
+        hover:bg-accent
+        group
+      "
     >
-      <MessageCircle size={32} />
+      <MessageCircle
+        size={26}
+        className="text-accent transition-colors duration-300 group-hover:text-white"
+      />
     </a>
   );
 }

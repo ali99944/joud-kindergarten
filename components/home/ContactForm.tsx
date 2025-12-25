@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function ContactForm() {
   return (
-    <section className="py-28 bg-[#FDF9FF]">
+    <section className="py-12 bg-[#FDF9FF]">
       <div className="max-w-5xl mx-auto px-4 md:px-12">
 
         <div className="relative bg-white rounded-[2.5rem] p-6 border border-gray-200 shadow-soft overflow-hidden">

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Menu, MessageCircle } from 'lucide-react';
 
 export default function Header() {
@@ -12,10 +11,11 @@ export default function Header() {
 
       {/* Desktop Nav */}
       <nav className="hidden md:flex items-center gap-8 font-semibold text-text-muted">
-        <Link href="#" className="hover:text-primary transition-colors">من نحن</Link>
-        <Link href="#" className="hover:text-primary transition-colors">مميزاتنا</Link>
-        <Link href="#" className="hover:text-primary transition-colors">تواصل معنا</Link>
-        <Link href="#" className="hover:text-primary transition-colors">المدربين</Link>
+        <a href="#about" className="hover:text-primary transition-colors">من نحن</a>
+        <a href="#features" className="hover:text-primary transition-colors">مميزاتنا</a>
+        <a href="#vision-mission" className="hover:text-primary transition-colors">رؤيتنا وأهدافنا</a>
+        <a href="#facilities" className="hover:text-primary transition-colors">المرافق</a>
+        <a href="#contact" className="hover:text-primary transition-colors">اتصل بنا</a>
       </nav>
 
       {/* Actions */}

@@ -36,6 +36,11 @@
   src: url('/fonts/tajawal.ttf') format(truetype);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'tajawal' !important;
+  scroll-behavior: smooth;
 }

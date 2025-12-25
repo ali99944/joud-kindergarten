@@ -3,7 +3,7 @@ import { Heart, Smile, ShieldCheck } from 'lucide-react';
 
 export default function AboutIntro() {
   return (
-    <section className="py-24 bg-[#FDF9FF]">
+    <section className="py-24 bg-[#FDF9FF]" id="about">
       <div className="max-w-6xl mx-auto px-4 md:px-12">
 
         <div className="relative bg-white rounded-[2.5rem] p-10 md:p-14 border border-gray-200 shadow-soft overflow-hidden">
