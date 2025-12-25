@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="lg:col-span-3 flex justify-center lg:justify-start relative order-2 lg:order-1 mt-10 lg:mt-0">
           <div className="relative w-64 h-64 lg:w-72 lg:h-72">
              {/* Orange Circle Background */}
-            <div className="absolute inset-0 bg-[#FF7675] rounded-full translate-y-8  opacity-90"></div>
+            <div className="absolute inset-0 bg-[#FF7675] rounded-full translate-y-4  opacity-90"></div>
             <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-transparent z-10">
               {/* Use the specific path you requested */}
               <Image 
@@ -52,16 +52,24 @@ export default function Hero() {
             مركز خطوات طفلي
 
           </h1>
-
           {/* Description */}
-          <p className="text-gray-500 max-w-lg mx-auto leading-relaxed mb-12 text-sm md:text-base font-medium">
+
+          <p className="text-gray-500 max-w-lg mx-auto leading-relaxed mb-4 text-sm md:text-base font-medium">
             نحن نلعب، نضحك، ونتعلم معًا كل يوم ❤️  
             أنشطة ممتعة، ألعاب تعليمية، وقصص جميلة تساعد أطفالنا على الاكتشاف والنمو بسعادة.
           </p>
 
+          <div className="flex justify-center mb-4">
+            <img
+              src="/images/logo.png"
+              alt="خطوات طفلي"
+              className="h-48 w-auto"
+            />
+          </div>
+
           {/* CTA Button */}
           <div className="mb-12">
-             <button className="bg-primary hover:bg-[#5a4ad1] text-white px-10 py-2.5 rounded-full font-bold text-lg shadow-soft  transition-all cursor-pointer flex items-center gap-3 mx-auto">
+             <button className="bg-primary hover:bg-primary/80 text-white px-10 py-2.5 rounded-full font-bold text-lg shadow-soft  transition-all cursor-pointer flex items-center gap-3 mx-auto">
                ابدأ الرحلة
                <div className="bg-white/20 rounded-full p-1">
                  <ArrowLeft size={16} />
@@ -70,49 +78,19 @@ export default function Hero() {
           </div>
 
           
-
-          {/* Stats Section - Exact Clone Layout */}
-          <div className="flex justify-center items-center gap-8 md:gap-16 w-full">
-            
-            {/* Stat 1 */}
-            <div className="flex flex-col items-start text-right relative">
-               <div className="flex items-center gap-3 mb-1">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white">
-                     <User size={24} className="opacity-90"/>
-                  </div>
-                  <span className="text-3xl font-black text-dark">7.5k+</span>
-               </div>
-               <p className="text-xs text-gray-500 font-bold mr-14">
-                 طالب نشط في<br/>دورات الموهوبين
-               </p>
-            </div>
-
-            {/* Stat 2 */}
-            <div className="flex flex-col items-start text-right relative">
-               <div className="flex items-center gap-3 mb-1">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white">
-                     <Zap size={24} className="opacity-90"/>
-                  </div>
-                  <span className="text-3xl font-black text-dark">50+</span>
-               </div>
-               <p className="text-xs text-gray-500 font-bold mr-14">
-                 برامج ميدانية<br/>متاحة ومتزايدة
-               </p>
-            </div>
-          </div>
         </div>
 
         {/* --- Left Column (RTL: Second Image) --- */}
         <div className="lg:col-span-3 flex justify-center lg:justify-end relative order-3 mt-10 lg:mt-0">
           <div className="relative w-64 h-64 lg:w-72 lg:h-72">
              {/* Yellow Circle Background */}
-            <div className="absolute inset-0 bg-[#FDCB6E] rounded-full translate-y-6  opacity-90"></div>
-            <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-transparent z-10">
+            <div className="absolute inset-0 bg-[#FDCB6E] rounded-full translate-y-4  opacity-90"></div>
+            <div className="absolute inset-0 rounded-full  border-4 border-transparent overflow-hidden z-10">
                <Image 
-                src="/images/students/girl.png" 
+                src="/images/students/girl-2.png" 
                 alt="Student girl" 
                 fill
-                className="object-cover scale-110"
+                className="object-cover scale-100 h-200"
               />
             </div>
           </div>

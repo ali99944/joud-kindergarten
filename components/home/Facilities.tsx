@@ -1,62 +1,93 @@
+import { Layout, BrainCircuit, Gamepad2, LucideIcon } from 'lucide-react';
 
-interface FacilityItemProps {
+interface FacilityCardProps {
+  icon: LucideIcon;
   title: string;
-  image: string;
+  desc: string;
   color: string;
+  blobColor: string;
 }
 
 
-const FacilityItem = ({ title, image, color }: FacilityItemProps) => (
-  <div className="group cursor-pointer">
-    {/* Image Container - Rounded like the UI cards */}
-    <div className="relative h-64 w-full rounded-[2.5rem] overflow-hidden mb-6 shadow-sm group-hover:shadow-xl transition-all duration-500">
-      <div className={`absolute inset-0 ${color} opacity-0 group-hover:opacity-20 transition-opacity z-10`}></div>
-      <img 
-        src={image} 
-        alt={title} 
-        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
-      />
-      {/* Floating Icon/Tag */}
-      <div className="absolute bottom-4 right-4 bg-white px-4 py-2 rounded-full shadow-lg z-20">
-         <span className="font-bold text-sm text-[#2D3436]">{title}</span>
-      </div>
+
+const FacilityCard = ({ icon: Icon, title, desc, color, blobColor }: FacilityCardProps) => (
+  <div className="bg-white p-8 rounded-[3rem] border border-gray-200 transition-all duration-300 relative overflow-hidden group">
+    
+    {/* Background Blob Decoration (Animated on Hover) */}
+    <div className={`absolute -top-10 -right-10 w-52 h-52 ${blobColor} rounded-full opacity-20 blur-2xl group-hover:scale-150 transition-transform duration-700`}></div>
+    
+    {/* Icon Container */}
+    <div className={`relative w-20 h-20 ${color} rounded-2xl rotate-3 group-hover:rotate-12 transition-transform duration-300 flex items-center justify-center mb-8`}>
+      <Icon size={36} className="text-white" />
+    </div>
+
+    {/* Content */}
+    <div className="relative z-10">
+      <h3 className="text-2xl font-black text-[#2D3436] mb-4">{title}</h3>
+      <p className="text-gray-500 font-medium leading-relaxed">
+        {desc}
+      </p>
+      
+      {/* Small Decorative Link/Arrow */}
+      {/* <div className="flex items-center gap-2 text-sm font-bold opacity-60 group-hover:opacity-100 group-hover:gap-3 transition-all">
+        <span style={{ color: 'var(--text-color)' }}>استكشف المرفق</span>
+        <div className={`p-1 rounded-full ${color}`}>
+            <ArrowUpLeft size={12} className="text-white" />
+        </div>
+      </div> */}
     </div>
   </div>
 );
 
 export default function Facilities() {
+  const facilities = [
+    {
+      title: "صفوف منظمة",
+      desc: "فصول دراسية مصممة بمساحات واسعة وإضاءة طبيعية، مجهزة بأثاث آمن ومريح يناسب أحجام الأطفال ويساعدهم على التركيز.",
+      icon: Layout,
+      color: "bg-primary", // Purple
+      blobColor: "bg-primary"
+    },
+    {
+      title: "غرف تطوير الذكاء",
+      desc: "قاعات مخصصة لألعاب المونتيسوري والألغاز الذهنية، تحتوي على أدوات تعليمية متطورة لتنمية مهارات التفكير المنطقي.",
+      icon: BrainCircuit,
+      color: "bg-secondary", // Yellow
+      blobColor: "bg-secondary"
+    },
+    {
+      title: "ساحة وألعاب",
+      desc: "منطقة ألعاب خارجية وداخلية آمنة تماماً، بأرضيات مطاطية وألعاب حركية تساعد على تفريغ طاقة الطفل وبناء جسده.",
+      icon: Gamepad2,
+      color: "bg-accent", // Salmon
+      blobColor: "bg-accent"
+    }
+  ];
+
   return (
-    <section className="py-20 relative">
+    <section className="py-24 bg-[#FDF9FF] relative">
       <div className="max-w-7xl mx-auto px-4 md:px-12">
         
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="text-primary font-bold tracking-wider text-sm bg-purple-50 px-4 py-2 rounded-full">
-            مرافقنا
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <span className="text-[#6C5CE7] font-bold tracking-wider text-sm bg-[#6C5CE7]/10 px-4 py-2 rounded-full uppercase">
+            مرافق الروضة
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-[#2D3436] mt-6">
-            بيئة تعليمية <span className="text-[#FF7675]">متكاملة</span>
+          <h2 className="text-3xl md:text-4xl font-black text-[#2D3436] mt-6 leading-tight">
+            بيئة مجهزة <span className="text-[#FF7675] underline decoration-wavy underline-offset-8 decoration-[#FDCB6E]">لراحتهم</span>
           </h2>
+          <p className="text-gray-400 mt-4 text-lg">
+            كل ركن في روضتنا مصمم ليخدم هدفاً تعليمياً أو ترفيهياً محدداً
+          </p>
         </div>
 
-        {/* Grid */}
+        {/* Facilities Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <FacilityItem 
-            title="صفوف منظمة" 
-            image="https://images.pexels.com/photos/8423452/pexels-photo-8423452.jpeg?auto=compress&cs=tinysrgb&w=800"
-            color="bg-purple-500"
-          />
-          <FacilityItem 
-            title="غرف الذكاء" 
-            image="https://images.pexels.com/photos/3975570/pexels-photo-3975570.jpeg?auto=compress&cs=tinysrgb&w=800"
-            color="bg-yellow-500"
-          />
-          <FacilityItem 
-            title="ساحة وألعاب" 
-            image="https://images.pexels.com/photos/296301/pexels-photo-296301.jpeg?auto=compress&cs=tinysrgb&w=800"
-            color="bg-orange-500"
-          />
+          {facilities.map((item, index) => (
+            <FacilityCard key={index} {...item} />
+          ))}
         </div>
+
       </div>
     </section>
   );

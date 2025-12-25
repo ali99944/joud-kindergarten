@@ -1,11 +1,9 @@
-import React from 'react';
 import Link from 'next/link';
 import { Menu, MessageCircle } from 'lucide-react';
-import Button from '../ui/Button';
 
 export default function Header() {
   return (
-    <header className="bg-accent-purple/10">
+    <header className="bg-primary/8">
       <div className="w-full py-4 px-4 md:px-12 max-w-7xl mx-auto flex justify-between items-center z-50 relative">
       {/* Logo */}
       <div className="flex items-center gap-1">
@@ -15,10 +13,9 @@ export default function Header() {
       {/* Desktop Nav */}
       <nav className="hidden md:flex items-center gap-8 font-semibold text-text-muted">
         <Link href="#" className="hover:text-primary transition-colors">من نحن</Link>
-        <Link href="#" className="hover:text-primary transition-colors">البرامج</Link>
-        <Link href="#" className="hover:text-primary transition-colors">الأسعار</Link>
+        <Link href="#" className="hover:text-primary transition-colors">مميزاتنا</Link>
+        <Link href="#" className="hover:text-primary transition-colors">تواصل معنا</Link>
         <Link href="#" className="hover:text-primary transition-colors">المدربين</Link>
-        <Link href="#" className="hover:text-primary transition-colors">المدونة</Link>
       </nav>
 
       {/* Actions */}
