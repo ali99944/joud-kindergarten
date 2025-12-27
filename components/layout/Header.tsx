@@ -22,7 +22,7 @@ export default function Header() {
       <div className="flex items-center gap-4">
         {/* WhatsApp Button */}
         <a 
-          href="https://wa.me/1234567890" // Replace with actual number
+          href="https://wa.me/+966542510147" // Replace with actual number
           target="_blank" 
           rel="noopener noreferrer"
           className="hidden md:flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold hover:bg-accent/80 transition-colors"
