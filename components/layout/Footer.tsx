@@ -17,7 +17,7 @@ export default function Footer() {
             className="mx-auto md:mx-0 mb-4"
           />
           <p className="text-gray-600 text-sm leading-relaxed">
-            Trusted حضانة توفر تجربة تعليمية ممتعة وآمنة للأطفال، تدمج اللعب مع التعليم وتنمي مهاراتهم وقيمهم الأخلاقية.
+            مركز خطوات طفلي حضانة توفر تجربة تعليمية ممتعة وآمنة للأطفال، تدمج اللعب مع التعليم وتنمي مهاراتهم وقيمهم الأخلاقية.
           </p>
           <p className="text-gray-400 text-xs mt-4">
             سجل تجاري - 2050172837
@@ -42,19 +42,19 @@ export default function Footer() {
           <ul className="space-y-3 text-gray-600 text-sm">
             <li className="flex items-center gap-2">
               <MapPin className="text-primary" size={18} />
-              حي الأمانة، شارع 9، الدمام، السعودية
+              الفرسان، الدمام، السعودية
             </li>
             <li className="flex items-center gap-2">
-              <Phone className="text-primary" size={18} />
-              +966 555 590 8071
+              <a href="tel:+966542510147" className="hover:text-primary transition-colors flex items-center gap-2">
+                <Phone className="text-primary" size={18} />
+                +966 542510147
+              </a>
             </li>
             <li className="flex items-center gap-2">
-              <Phone className="text-primary" size={18} />
-              +966 539 988 873
-            </li>
-            <li className="flex items-center gap-2">
-              <Mail className="text-primary" size={18} />
-              contact@trusted.com
+              <a href="mailto:contact@trusted.com" className="hover:text-primary transition-colors flex items-center gap-2">
+                <Mail className="text-primary" size={18} />
+                contact@trusted.com
+              </a>
             </li>
           </ul>
         </div>
@@ -76,16 +76,13 @@ export default function Footer() {
 
           {/* Social */}
           <div className="flex items-center gap-2 mt-6">
-            <a href="#" className="flex items-center justify-center w-8 h-8 rounded-full bg-primary hover:bg-primary/80 transition-all duration-300">
-              <FaTwitter className="text-white text-md" />
-            </a>
-            <a href="#" className="flex items-center justify-center w-8 h-8 rounded-full bg-primary hover:bg-primary/80 transition-all duration-300">
+            <a href="snapchat.com/@baby_stepsq" className="flex items-center justify-center w-8 h-8 rounded-full bg-primary hover:bg-primary/80 transition-all duration-300">
               <FaSnapchat className="text-white text-md" />
             </a>
-            <a href="#" className="flex items-center justify-center w-8 h-8 rounded-full bg-primary hover:bg-primary/80 transition-all duration-300">
+            <a href="instagram.com/babysteps_ksa/" className="flex items-center justify-center w-8 h-8 rounded-full bg-primary hover:bg-primary/80 transition-all duration-300">
               <FaInstagram className="text-white text-md" />
             </a>
-            <a href="#" className="flex items-center justify-center w-8 h-8 rounded-full bg-primary hover:bg-primary/80 transition-all duration-300">
+            <a href="tiktok.com/@baby.steps00" className="flex items-center justify-center w-8 h-8 rounded-full bg-primary hover:bg-primary/80 transition-all duration-300">
               <FaTiktok className="text-white text-md" />
             </a>
           </div>
@@ -95,7 +92,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="mt-12 text-center text-xs text-gray-400">
-        © 2025 Trusted. جميع الحقوق محفوظة.
+        © 2025 مركز خطوات طفلي. جميع الحقوق محفوظة.
       </div>
     </footer>
   );
