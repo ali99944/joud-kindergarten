@@ -2,7 +2,7 @@ import { Menu, MessageCircle } from 'lucide-react';
 
 export default function Header() {
   return (
-    <header className="bg-primary/8">
+    <header className="bg-[#808384]/10">
       <div className="w-full py-4 px-4 md:px-12 max-w-7xl mx-auto flex justify-between items-center z-50 relative">
       {/* Logo */}
       <div className="flex items-center gap-1">

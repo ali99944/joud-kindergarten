@@ -52,15 +52,15 @@ export default function Facilities() {
       title: "غرف تطوير الذكاء",
       desc: "قاعات مخصصة لألعاب المونتيسوري والألغاز الذهنية، تحتوي على أدوات تعليمية متطورة لتنمية مهارات التفكير المنطقي.",
       icon: BrainCircuit,
-      color: "bg-secondary", // Yellow
-      blobColor: "bg-secondary"
+      color: "bg-primary", // Yellow
+      blobColor: "bg-primary"
     },
     {
       title: "ساحة وألعاب",
       desc: "منطقة ألعاب خارجية وداخلية آمنة تماماً، بأرضيات مطاطية وألعاب حركية تساعد على تفريغ طاقة الطفل وبناء جسده.",
       icon: Gamepad2,
-      color: "bg-accent", // Salmon
-      blobColor: "bg-accent"
+      color: "bg-primary", // Salmon
+      blobColor: "bg-primary"
     }
   ];
 
@@ -74,7 +74,7 @@ export default function Facilities() {
             مرافق الروضة
           </span>
           <h2 className="text-3xl md:text-4xl font-black text-[#2D3436] mt-6 leading-tight">
-            بيئة مجهزة <span className="text-[#FF7675] underline decoration-wavy underline-offset-8 decoration-[#FDCB6E]">لراحتهم</span>
+            بيئة مجهزة <span className="text-primary underline decoration-wavy underline-offset-8 decoration-secondary">لراحتهم</span>
           </h2>
           <p className="text-gray-400 mt-4 text-lg">
             كل ركن في روضتنا مصمم ليخدم هدفاً تعليمياً أو ترفيهياً محدداً

@@ -17,7 +17,7 @@ export default function ContactForm() {
 
             {/* Left – Text */}
             <div className="text-right">
-              <span className="inline-flex items-center gap-2 bg-purple-100 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4">
+              <span className="inline-flex items-center gap-2 bg-primary/15 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4">
                 <Heart size={16} />
                 نحن هنا لمساعدتك
               </span>

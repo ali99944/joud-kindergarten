@@ -14,7 +14,7 @@ export default function AboutIntro() {
 
           <div className="relative z-10 text-center max-w-3xl mx-auto">
 
-            <span className="inline-block bg-purple-100 text-primary font-bold px-5 py-2 rounded-full text-sm mb-5">
+            <span className="inline-block bg-primary/15 text-primary font-bold px-5 py-2 rounded-full text-sm mb-5">
               من نحن
             </span>
 

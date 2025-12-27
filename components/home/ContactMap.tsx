@@ -16,7 +16,7 @@ export default function ContactMap() {
 
             {/* Info */}
             <div className="text-right">
-              <span className="inline-flex items-center gap-2 bg-purple-100 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4">
+              <span className="inline-flex items-center gap-2 bg-primary/15 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4">
                 <HeartHandshake size={16} />
                 نحن سعداء بزيارتكم
               </span>
@@ -33,7 +33,8 @@ export default function ContactMap() {
               <div className="space-y-5">
                 {/* Phone */}
                 <a
-                  href="https://wa.me/966500000000"
+                  href="https://wa.me/966542510147"
+                  target="_blank"
                   className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 hover:bg-gray-50/80  transition-all group"
                 >
                   <div className="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center transition-transform">
@@ -42,7 +43,7 @@ export default function ContactMap() {
                   <div>
                     <p className="text-sm text-gray-400 font-bold">اتصال / واتساب</p>
                     <p className="text-md font-black text-dark" dir='ltr'>
-                      +966 0542510147
+                      +966542510147
                     </p>
                   </div>
                 </a>
@@ -55,7 +56,7 @@ export default function ContactMap() {
                   <div>
                     <p className="text-sm text-gray-400 font-bold">العنوان</p>
                     <p className="text-md font-black text-dark">
-                      الرياض – حي الفرسان
+                      الدمام – حي الفرسان
                     </p>
                   </div>
                 </div>
@@ -64,7 +65,6 @@ export default function ContactMap() {
               <div className="mt-10 flex max-md:justify-center">
                 <button className="bg-primary text-white px-8 py-3 rounded-full font-black flex items-center gap-3 hover:bg-primary/80 transition-all cursor-pointer duration-300">
                   احجز زيارة للحضانة
-                  <ArrowLeft size={18} />
                 </button>
               </div>
             </div>

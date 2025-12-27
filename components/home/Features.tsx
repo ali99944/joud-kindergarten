@@ -82,7 +82,7 @@ export default function Features() {
         
         {/* Section Header */}
         <div className="text-center mb-20 max-w-2xl mx-auto">
-          <span className="text-primary font-bold tracking-wider text-sm bg-purple-100 px-4 py-2 rounded-full uppercase">
+          <span className="text-primary font-bold tracking-wider text-sm bg-primary/15 px-4 py-2 rounded-full uppercase">
             لماذا تختارنا؟
           </span>
           <h2 className="text-3xl md:text-4xl font-black text-dark mt-6 mb-4">

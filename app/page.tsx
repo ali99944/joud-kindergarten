@@ -7,6 +7,8 @@ import Facilities from '@/components/home/Facilities';
 import ContactMap from '@/components/home/ContactMap';
 import ContactForm from '@/components/home/ContactForm';
 import AboutUs from '@/components/home/About';
+import StatsSection from '@/components/home/StatsSection';
+import PricingSection from '@/components/home/PackagesSection';
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Header />
       <Hero />
       <AboutUs />
+      <PricingSection />
+      <StatsSection />
       <Features />
       <VisionSection />
       <Facilities />
