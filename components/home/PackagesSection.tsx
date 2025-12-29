@@ -38,7 +38,7 @@ const PriceCard = ({
       <span className="text-sm font-medium"> / شهريًا</span>
     </div>
 
-    <ul className="space-y-4 mb-8">
+    {/* <ul className="space-y-4 mb-8">
       {features.map((item, i) => (
         <li key={i} className="flex items-center gap-3">
           <div
@@ -53,7 +53,7 @@ const PriceCard = ({
           </span>
         </li>
       ))}
-    </ul>
+    </ul> */}
 
     <button
       className={`w-full py-3 rounded-full font-bold transition-colors cursor-pointer
@@ -72,7 +72,7 @@ const PriceCard = ({
 export default function PricingSection() {
   return (
     <section className="py-24 bg-[#FDF9FF] relative">
-      <div className="max-w-7xl mx-auto px-4 md:px-12">
+      <div className="mx-auto px-4 md:px-12">
         
         {/* Header */}
         <div className="text-center mb-20 max-w-2xl mx-auto">
@@ -88,11 +88,11 @@ export default function PricingSection() {
         </div>
 
         {/* Cards */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
   
   <PriceCard
     title="نصف يوم"
-    price="1500 ر.س"
+    price="50 ر.س"
     desc="خيار مثالي لبداية الطفل"
     features={[
       "أنشطة تعليمية",
@@ -103,7 +103,7 @@ export default function PricingSection() {
 
   <PriceCard
     title="يوم كامل"
-    price="2200 ر.س"
+    price="100 ر.س"
     desc="تجربة متكاملة للطفل"
     features={[
       "تعليم + أنشطة",
@@ -114,8 +114,8 @@ export default function PricingSection() {
   />
 
   <PriceCard
-    title="البرنامج المتكامل"
-    price="2800 ر.س"
+    title="الشهر"
+    price="1200 ر.س"
     desc="أفضل تجربة تعليمية"
     features={[
       "ثنائي اللغة",
@@ -125,12 +125,26 @@ export default function PricingSection() {
     ]}
   />
 
+  <PriceCard
+        title="الترم"
+        price="3800 ر.س"
+        desc="رعاية خاصة واهتمام فردي بطفلك"
+        highlight
+        features={[
+          "عدد أطفال محدود",
+          "اهتمام فردي كامل",
+          "برنامج مخصص للطفل",
+          "مرونة في المواعيد",
+          "تقارير متابعة مستمرة",
+        ]}
+      />
+
   {/* Fourth Card - Centered */}
-  <div className="md:col-span-3 flex justify-center mt-6">
+  {/* <div className="md:col-span-3 flex justify-center mt-6">
     <div className="w-full max-w-md">
       <PriceCard
-        title="الدوام الخاص"
-        price="حسب الاتفاق"
+        title="الترم"
+        price="3800 ر.س"
         desc="رعاية خاصة واهتمام فردي بطفلك"
         highlight
         features={[
@@ -142,7 +156,7 @@ export default function PricingSection() {
         ]}
       />
     </div>
-  </div>
+  </div> */}
 
 </div>
 

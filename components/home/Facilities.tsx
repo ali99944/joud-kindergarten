@@ -70,7 +70,7 @@ export default function Facilities() {
         
         {/* Section Header */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <span className="text-[#6C5CE7] font-bold tracking-wider text-sm bg-[#6C5CE7]/10 px-4 py-2 rounded-full uppercase">
+          <span className="text-primary font-bold tracking-wider text-sm bg-primary/10 px-4 py-2 rounded-full uppercase">
             مرافق الروضة
           </span>
           <h2 className="text-3xl md:text-4xl font-black text-[#2D3436] mt-6 leading-tight">

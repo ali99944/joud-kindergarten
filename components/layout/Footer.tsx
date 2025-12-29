@@ -47,13 +47,13 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <a href="tel:+966542510147" className="hover:text-primary transition-colors flex items-center gap-2">
                 <Phone className="text-primary" size={18} />
-                +966 542510147
+                <span dir="ltr">+966542510147</span>
               </a>
             </li>
             <li className="flex items-center gap-2">
               <a href="mailto:contact@trusted.com" className="hover:text-primary transition-colors flex items-center gap-2">
                 <Mail className="text-primary" size={18} />
-                contact@trusted.com
+                support@babysteps.sa
               </a>
             </li>
           </ul>
@@ -64,8 +64,8 @@ export default function Footer() {
           <h3 className="text-lg font-bold text-[#2D3436] mb-4">مواعيد العمل</h3>
           <p className="text-gray-600 text-sm leading-relaxed mb-4">
             الأحد - الخميس<br/>
-            الفترة الصباحية: 7 صباحاً - 2 مساءً<br/>
-            الفترة المسائية: 2 مساءً - 10 مساءً
+            الشتاء: 7 صباحاً - 12 ظهرا<br/>
+            الصيف: 6:30 مساءً - 11:30 مساءً
           </p>
           <a
             href="https://wa.me/966555908071"
