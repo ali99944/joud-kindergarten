@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Phone, MapPin, Mail } from "lucide-react";
-import { FaTwitter, FaSnapchat, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaSnapchat, FaInstagram, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -53,7 +53,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <a href="mailto:contact@trusted.com" className="hover:text-primary transition-colors flex items-center gap-2">
                 <Mail className="text-primary" size={18} />
-                support@babysteps.sa
+                steps33q@gmail.com
               </a>
             </li>
           </ul>
