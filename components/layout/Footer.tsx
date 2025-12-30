@@ -68,7 +68,7 @@ export default function Footer() {
             الصيف: 6:30 مساءً - 11:30 مساءً
           </p>
           <a
-            href="https://wa.me/966555908071"
+            href="https://wa.me/966542510147"
             className="inline-block bg-primary text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-primary/80 transition-colors"
           >
             احجز مكان طفلك
