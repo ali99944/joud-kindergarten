@@ -90,16 +90,7 @@ export default function PricingSection() {
         {/* Cards */}
 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
   
-  <PriceCard
-    title="نصف يوم"
-    price="50 ر.س"
-    desc="خيار مثالي لبداية الطفل"
-    features={[
-      "أنشطة تعليمية",
-      "وجبة خفيفة",
-      "متابعة يومية",
-    ]}
-  />
+
 
   <PriceCard
     title="يوم كامل"
@@ -110,6 +101,17 @@ export default function PricingSection() {
       "وجبات صحية",
       "تنمية مهارات",
       "متابعة سلوكية",
+    ]}
+  />
+
+    <PriceCard
+    title="اسبوع"
+    price="500 ر.س"
+    desc="خيار مثالي لبداية الطفل"
+    features={[
+      "أنشطة تعليمية",
+      "وجبة خفيفة",
+      "متابعة يومية",
     ]}
   />
 

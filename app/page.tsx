@@ -9,6 +9,7 @@ import ContactForm from '@/components/home/ContactForm';
 import AboutUs from '@/components/home/About';
 import StatsSection from '@/components/home/StatsSection';
 import PricingSection from '@/components/home/PackagesSection';
+import PaymentsLogo from '@/components/home/payments-logo';
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
         <ContactMap />
         <ContactForm />
       </div>
+
+      <PaymentsLogo />
       <Footer />
     </main>
   );
